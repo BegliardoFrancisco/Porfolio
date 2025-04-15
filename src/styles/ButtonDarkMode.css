@@ -1,0 +1,36 @@
+.dark-mode-container {
+    width: 8rem;
+    border: 1px solid #bbb;
+    background-color: #ccc;
+    border-radius: 100px;
+  }
+  
+  .btn-dark-mode {
+    min-width: 8rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    border:none;
+    border-radius: 100px;
+    font-weight: 600;
+    background-color: transparent;
+  }
+  
+  
+  .dark-mode-icon {
+    margin-left: 0.4rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #101010;
+    border-radius: 100%;
+  }
+  
+  .with-mode-icon {
+    margin-left: 0.4rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #ffff;
+    border-radius: 100%;
+  }
+  
