@@ -6,6 +6,7 @@
   }
   
   .btn-dark-mode {
+    color:#101010;
     min-width: 8rem;
     display: flex;
     justify-content:space-around;
