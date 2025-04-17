@@ -8,5 +8,12 @@
 .icon-lang {
     width: 2rem;
     height: 2rem;
-    padding: 0.25rem;
+    padding: 0.40rem;
+}
+
+.icon-Hobbies {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.40rem;
+    padding-bottom: 1rem;
 }

@@ -1,0 +1,10 @@
+.section_lenguaje_tools{
+    padding: 0rem 1.5rem;
+    font-size: 1rem;
+}
+
+.Contain-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap
+}

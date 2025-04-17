@@ -1,0 +1,10 @@
+.hobbies-section {
+  padding: 0rem 1.5rem;
+  font-size: 1rem;
+}
+
+.container-icon-Hobbies {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}

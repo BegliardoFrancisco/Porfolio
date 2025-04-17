@@ -3,8 +3,17 @@
     border: 1px solid #bbb;
     background-color: #eee;
     border-radius: 100px;
+    transition: all 0.5s ease-in-out	;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+    0 1px 3px rgba(0, 0, 0, 0.08);
   }
   
+  .dark-mode-container:hover {
+    background-color: #fff;
+  }
+
+
   .btn-dark-mode {
     color:#101010;
     min-width: 8rem;

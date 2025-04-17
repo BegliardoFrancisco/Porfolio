@@ -28,6 +28,8 @@ const ContactSection = () => {
                         <LinkintIcon/>
                         <a href='https://www.linkedin.com/in/francisco-begliardo-2a07a2297/'>https://www.linkedin.com/in/francisco-begliardo-2a07a2297/</a>
                     </div>
+
+                    <hr/>
                 </section>
         </>
     )
