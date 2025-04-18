@@ -11,7 +11,7 @@ const ContactSection = () => {
         <section className='Contact_section'>
                     <h1>CONTACT</h1>
                     <h2>Francisco Hugo Begliardo</h2>
-                    <h3>24 años</h3>
+                    <h3>24 years</h3>
                     <div className='CardContact'>
                         <UbicationIcon />
                         <a href='https://maps.app.goo.gl/QyQNcJ7376VPLypU6'>Cordoba, Cordoba, Argentina</a>
