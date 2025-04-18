@@ -6,5 +6,12 @@
 .Contain-logo {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+}
+
+@media (768px >= width >= 375px) {	
+    .Contain-logo {
+        justify-content: center;
+        align-items: center;
+    }
 }

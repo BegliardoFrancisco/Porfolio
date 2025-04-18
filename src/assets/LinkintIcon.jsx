@@ -4,10 +4,9 @@ import * as React from "react"
 const LinkintIcon = ( ) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="3rem"
-    height="3rem"
     fill="none"
     viewBox="0 0 24 24"
+    className="icon-linkedin"
   >
     <path
       fill="#000"

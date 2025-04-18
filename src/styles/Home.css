@@ -15,3 +15,25 @@
     border-right: 1px solid #aaa;
 }
 
+
+@media (768px >= width >= 344px) {	
+    .Home__aside {
+        width: 100%;
+        border-right: none;
+    }
+    .Home {
+        padding: 0rem ;
+    }
+}
+
+@media ( 1024px >= width >= 820px ) {
+    .Home__aside {
+        width: 30vw;
+    }
+}
+
+@media ( 1280px >= width >= 1025px ) {
+    .Home__aside {
+        width: 25vw;
+    }
+}
