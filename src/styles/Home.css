@@ -47,6 +47,22 @@ main{
 .projects {
     color: #aaa;
     width: 60vw;
+    height: 66vh;
+    overflow-y: scroll;   
+}
+
+.projects::-webkit-scrollbar {
+    width: .3rem;
+}
+
+.projects::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.projects::-webkit-scrollbar-thumb {
+    background-color: #111;
+    border-radius: 50px;
 }
 
 .projects h1 {
@@ -63,11 +79,16 @@ main{
 .projects-contain {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 
 .hola {
     height: 33vw;
     background-color: #aaa;
+}
+
+.holaa {
+    height: 33vw;
+    background-color: red;
 }

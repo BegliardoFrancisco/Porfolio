@@ -64,6 +64,10 @@ const Home = () => {
                 <section className='hola'>
                     <h1>hola</h1>
                 </section>
+                
+                <section className='holaa'>
+                    <h1>hola</h1>
+                </section>
 
             </section>
 
