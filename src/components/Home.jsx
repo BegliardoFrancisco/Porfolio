@@ -55,11 +55,7 @@ const Home = () => {
                             description={project.description}
                             link={project.link}
                         />
-                    ))}
-
-                   
-
-                    
+                    ))}         
                 </section>
 
             </section>
