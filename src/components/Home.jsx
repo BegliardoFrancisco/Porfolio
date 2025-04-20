@@ -47,26 +47,19 @@ const Home = () => {
             <section className='Home'>
                 <section className='projects'>
                     <h1>PROJECTS</h1>
+                    {projects.map((project) => (
+                        <ProjectCard
+                            key={project.id}
+                            img={project.img}
+                            title={project.title}
+                            description={project.description}
+                            link={project.link}
+                        />
+                    ))}
 
-                    <div className='projects-contain'>
-                        {projects.map((project) => (
-                            <ProjectCard
-                                key={project.id}
-                                img={project.img}
-                                title={project.title}
-                                description={project.description}
-                                link={project.link}
-                            />
-                        ))}
-                    </div>
-                </section>
+                   
 
-                <section className='hola'>
-                    <h1>hola</h1>
-                </section>
-                
-                <section className='holaa'>
-                    <h1>hola</h1>
+                    
                 </section>
 
             </section>
