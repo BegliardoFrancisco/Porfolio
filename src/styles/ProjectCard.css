@@ -7,18 +7,26 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
                 0 1px 3px rgba(0, 0, 0, 0.08);
     border-radius: 30px;
-    scroll-snap-align: 55%; 
-    transition: transform 0.1s ease, opacity 0.1s ease; 
-    opacity: 0.5; 
-    transform: scale(0.9); /
+    scroll-snap-align: center;
+    animation: fadeIn auto linear ;
+    animation-fill-mode: both;
+    animation-timeline: --squareTimeline;
+    animation-duration: 0.5s;
+
+
 }
 
+@keyframes fadeIn {
+    from {
+        transform: scale(1);
+        }
+    to {
+        transform: scale(1.2); opacity: 1;
+        padding: 6rem 1rem; 
 
-.projects-section:nth-child(1n):hover,
-.projects-section:nth-child(1n):focus-within {
-    opacity: 1; 
-    transform: scale(1.2); 
-    z-index: 2;
+    }
+
+    
 }
 
 .project-img {
@@ -104,6 +112,7 @@
             opacity: 1;
             justify-content: center;
             align-items: center;
+            animation:none
         }
         .project-img {
             flex: inherit;
@@ -131,7 +140,6 @@
 
     @media ( 1280px >= width >= 1025px ) {
         .projects-section {
-
             flex: inherit;
             flex-direction: row;
             width: 100%;

@@ -10,6 +10,13 @@ main {
     0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+@media ( 1024px >= width >= 820px ) {
+    
+    .main {
+        padding: 10rem;
+    }
+}
+
 .Home__aside {
     flex: 1;
     width: 20vw;
@@ -28,7 +35,9 @@ main {
     }
 }
 
+
 @media ( 1024px >= width >= 820px ) {
+    
     .Home__aside {
         width: 30vw;
     }
@@ -47,7 +56,7 @@ main {
     padding: 0rem 1.5rem;
 }
 
-.projects {
+#projects {
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -58,35 +67,40 @@ main {
     height: 50vh; 
 
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-snap-type: y mandatory;
     scroll-snap-align: center;
+    scroll-timeline-name: --squareTimeline;
 }
 
 
+#projects > *:nth-child(n) {
+    animation-delay: calc(1s * (n - 1));
+}
 
-.projects::-webkit-scrollbar {
-    width: 2px; /* Aumentamos el ancho */
+
+#projects::-webkit-scrollbar {
+    width: 4px; /* Aumentamos el ancho */
     background-color: #aaa; /* Color de la barra */
-    height: 2px; /* Aumentamos la altura (si es horizontal) */
     border-radius: 3px;
 }
 
-.projects::-webkit-scrollbar-thumb {
+#projects::-webkit-scrollbar-thumb {
     background-color: #aaa; /* Un color oscuro para el pulgar */
     border-radius: 3px;
     border: none;
     background-clip: padding-box;
-    height: 1px; /* Igualamos la altura */
+    height: 4px; /* Igualamos la altura */
 }
 
-.projects::-webkit-scrollbar-track {
+#projects::-webkit-scrollbar-track {
     background-color: #ddd; /* Un color claro para la pista */
     width: 1px;
     height: 1px;
     border-radius: 3px;
 }
 
-.projects h1 {
+#projects h1 {
     color: #aaa;
     font-size: 1.2rem;
     font-weight: 700;
@@ -96,14 +110,14 @@ main {
     z-index: 10;
 }
 
-.projects article {
+#projects article {
     color: #aaa;
     column-gap: .5rem;
 }
 
 
 @media (768px >= width >= 344px) {	
-    .projects {
+    #projects {
         width: 100%;
         height: auto;
         overflow-y: hidden;
@@ -115,7 +129,7 @@ main {
 }
 
 @media ( 1024px >= width >= 820px ) {
-    .projects {
+    #projects {
         width: 100%;
         height: auto;
         overflow-y: hidden;
@@ -124,11 +138,15 @@ main {
         align-items: center;
     }
 
-    .projects h1 {
+    #projects h1 {
         width: 100%;
     }
 
     .Home {
         padding: 0rem ;
     }
+}
+
+@media ( 1280px >= width >= 1025px ) {
+ 
 }

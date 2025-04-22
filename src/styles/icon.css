@@ -23,9 +23,17 @@
     height: 3rem;
 }
 
-@media (360px < width < 412px){	
+@media (768px <=width < 1280px) {
     .icon-linkedin {
-        width: 1rem;
-        height: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
+@media (width = 540px) {	
+    .icon-linkedin {
+
+        width: 2rem;
+        height: 2rem;
     }
 }
