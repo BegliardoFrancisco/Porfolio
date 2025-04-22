@@ -32,6 +32,9 @@ main {
     .Home__aside {
         width: 30vw;
     }
+    .Home {
+        padding: 0rem ;
+    }
 }
 
 @media ( 1280px >= width >= 1025px ) {
@@ -96,4 +99,36 @@ main {
 .projects article {
     color: #aaa;
     column-gap: .5rem;
+}
+
+
+@media (768px >= width >= 344px) {	
+    .projects {
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    .Home {
+        padding: 0rem ;
+    }
+}
+
+@media ( 1024px >= width >= 820px ) {
+    .projects {
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+        overflow: inherit;
+        border-right: 1px solid #aaa;
+        align-items: center;
+    }
+
+    .projects h1 {
+        width: 100%;
+    }
+
+    .Home {
+        padding: 0rem ;
+    }
 }
