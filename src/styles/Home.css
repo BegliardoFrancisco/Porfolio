@@ -73,7 +73,6 @@ main {
     border-radius: 3px;
     border: none;
     background-clip: padding-box;
-    width: 1px; /* Igualamos el ancho */
     height: 1px; /* Igualamos la altura */
 }
 
@@ -82,12 +81,6 @@ main {
     width: 1px;
     height: 1px;
     border-radius: 3px;
-}
-
-
-@keyframes scroll-progress {
-    from { top: 38%;}
-    to {top: 100%;}
 }
 
 .projects h1 {
@@ -104,6 +97,3 @@ main {
     color: #aaa;
     column-gap: .5rem;
 }
-
-
-

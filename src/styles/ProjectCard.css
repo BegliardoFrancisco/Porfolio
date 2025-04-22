@@ -1,15 +1,25 @@
-
+/* Estilo base para los ProjectCards */
 .projects-section {
-    flex: 0.8;
+    flex: 0.9;
     display: flex;
     flex-direction: row;
     width: 92%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
-    0 1px 3px rgba(0, 0, 0, 0.08);
+                0 1px 3px rgba(0, 0, 0, 0.08);
     border-radius: 30px;
-    scroll-snap-align: center;
+    scroll-snap-align: 55%; 
+    transition: transform 0.1s ease, opacity 0.1s ease; 
+    opacity: 0.5; 
+    transform: scale(0.9); /
 }
 
+
+.projects-section:nth-child(1n):hover,
+.projects-section:nth-child(1n):focus-within {
+    opacity: 1; 
+    transform: scale(1.2); 
+    z-index: 2;
+}
 
 .project-img {
     flex: .25;
@@ -58,9 +68,13 @@
 }
 
 
-@keyframes fade-way {
-    to {
+@keyframes project-card-animation {
+    from {
         opacity: 0;
+        transform: translateY(20px);
     }
-        
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
