@@ -78,7 +78,6 @@ main {
     animation-delay: calc(1s * (n - 1));
 }
 
-
 #projects::-webkit-scrollbar {
     width: 4px; /* Aumentamos el ancho */
     background-color: #aaa; /* Color de la barra */
