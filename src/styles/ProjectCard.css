@@ -1,6 +1,6 @@
 /* Estilo base para los ProjectCards */
 .projects-section {
-    flex: 0.9;
+    flex: 0.8;
     display: flex;
     flex-direction: row;
     width: 92%;
@@ -12,16 +12,18 @@
     animation-fill-mode: both;
     animation-timeline: --squareTimeline;
     animation-duration: 0.5s;
+    justify-content: center;
+    align-items: center;
 
 
 }
 
 @keyframes fadeIn {
     from {
-        transform: scale(1);
+        transform: scale(.9);
         }
     to {
-        transform: scale(1.2); opacity: 1;
+        transform: scale(1); opacity: 1;
         padding: 6rem 1rem; 
 
     }
